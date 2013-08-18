@@ -91,5 +91,40 @@
         </div>
         <script src="js/impress.js" type="text/javascript"></script>
         <script>impress().init();</script>
+        <script type="text/javascript">
+            var autoPlay = false
+            var api = impress()
+            var delay = 7000
+            
+            function delayedTransition()
+            {
+                setTimeout(function()
+                {
+                    if (autoPlay)
+                    {
+                        api.next()
+                        delayedTransition()
+                    }
+                }, delay)
+            }
+            
+            document.onkeypress = function(e) 
+            {
+                e = e || window.event
+                var charCode = (typeof e.which == "number") ? e.which : e.keyCode
+                if (charCode == 112) // 'p'
+                {
+                    if (autoPlay)
+                    {
+                        autoPlay = false
+                    }
+                    else
+                    {
+                        autoPlay = true
+                        delayedTransition()
+                    }
+                }
+            };
+        </script>
     </body>
 </html>
