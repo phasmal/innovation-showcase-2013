@@ -1,0 +1,35 @@
+
+/* golden ratio=1.61803398875 */
+
+/*
+ * defaults
+ */
+
+body
+{
+    background-color: blue;
+    color: white;
+}
+
+body a
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*
+ * general slide styles
+ */
+
+.step
+{
+    position: relative;
+    font-family: 'Alegreya SC', serif;
+    
+    width: 640px;
+    font-size: 86px;
+    opacity: 0.8;
+    text-align: center;
+}
