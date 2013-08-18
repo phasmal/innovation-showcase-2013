@@ -73,6 +73,11 @@ body a
     overflow: hidden;
 }
 
+.detail img
+{
+    padding: 40px;
+}
+
 .image img
 {
     height: 140px;
@@ -95,4 +100,19 @@ body a
     /*height: 200px;*/
     top: 0px;
     /*clip:rect(100px,100px,100px,100px);*/
+}
+
+.detail img.textformats
+{
+    width: 800px;
+}
+
+.detail img.addressbar
+{
+    width: 800px;
+}
+
+.detail img.linkeddata
+{
+    width: 900px;
 }

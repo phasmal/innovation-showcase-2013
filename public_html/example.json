@@ -1,0 +1,5 @@
+{
+    "dataset": "population",
+    "region" : "801",
+    "queryByType" : "http://aserver.com/api/region/801/children/children/type/{type}"
+}
