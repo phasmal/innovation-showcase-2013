@@ -48,3 +48,51 @@ body a
     height: 60px;
     text-align: right;
 }
+
+.title
+{
+    width: 100%;
+    text-align: left;
+}
+
+.detail
+{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.image
+{
+    position: absolute;
+    
+    height: 160px;
+    
+    top: 285px;
+    left: 110px;
+    
+    overflow: hidden;
+}
+
+.image img
+{
+    height: 140px;
+}
+
+.attribution
+{
+    position: absolute;
+    top: 140px;
+    height: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 14px;
+}
+
+/*
+ * Special Cases
+ */
+.image img.linked
+{
+    /*height: 200px;*/
+    top: 0px;
+    /*clip:rect(100px,100px,100px,100px);*/
+}
